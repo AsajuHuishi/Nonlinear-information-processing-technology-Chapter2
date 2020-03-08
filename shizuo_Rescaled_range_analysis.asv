@@ -2,7 +2,7 @@
 clear all
 close all
 k = figure;
-flag = 0;st=0.001;
+flag = 0;
 reD = 1.1:0.1:1.9;
 eta = 0; 
 reK = Rescaled_range_analysis(eta,flag,st);
@@ -15,17 +15,17 @@ k1 = plot(reD,reK,'ks','MarkerFaceColor','w');
 hold on;
 
 eta = 3; 
-reK = Rescaled_range_analysis(eta,flag,st);
+reK = Rescaled_range_analysis(eta,flag);
 k2 = plot(reD,reK,'k^','MarkerFaceColor','k');
 hold on;
 
 eta = 5; 
-reK = Rescaled_range_analysis(eta,flag,st);
+reK = Rescaled_range_analysis(eta,flag);
 k3 = plot(reD,reK,'k^','MarkerFaceColor','w');
 hold on;
 
 eta = 7; 
-reK = Rescaled_range_analysis(eta,flag,st);
+reK = Rescaled_range_analysis(eta,flag);
 k4 = plot(reD,reK,'ko','MarkerFaceColor','k');
 legend([k0,k1,k2,k3,k4],'\eta=0','\eta=1','\eta=3','\eta=5','\eta=7');
 
